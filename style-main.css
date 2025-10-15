@@ -20,12 +20,12 @@ a {
 }
 
 .neon {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    right: 5%;
+    display: block;
+    margin-top: 25vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     color: #fff;
-    font-size: 56px;
+    font-size: 3.5rem;
     text-align: center;
     text-shadow:
         0 0 5px #fff,
@@ -60,8 +60,10 @@ a {
             #0044ff 87%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    margin-top: 175%;
-    margin-left: 25%;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #container-stars {
