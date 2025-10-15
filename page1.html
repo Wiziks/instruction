@@ -25,6 +25,28 @@
             </div>
         </button>
     </a>
+    <div class="scroll-down" id="scrollArrow"><img src="images/arrow.png"></div>
 </body>
+<script>
+    const arrow = document.getElementById('scrollArrow');
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const pageHeight = document.body.offsetHeight;
+
+        if (scrollPosition >= pageHeight) {
+            arrow.classList.add('hidden');
+        } else {
+            arrow.classList.remove('hidden');
+        }
+    });
+
+    arrow.addEventListener('click', () => {
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+</script>
 
 </html>
